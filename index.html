@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amalitech Job Board</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<h1> Amalitech Job Board</h1>
+
+<div id="filters">
+    <label for="title-filter">Title:</label>
+    <input type="text" id="title-filter" oninput="filterJobs()">
+</div>
+
+<div id="filters">
+    <label for="location-filter">Location:</label>
+    <input type="text" id="location-filter" oninput="filterJobs()">
+</div>
+
+<div id="filters">
+    <label for="type-filter">Employment Type:</label>
+    <select id="type-filter" onchange="filterJobs()">
+        <option value="">All</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Part-time">Part-time</option>
+    </select>
+</div>
+
+<div id="job-board"></div>
+
+<div id="job-details"></div>
+</body>
+
+</html>
