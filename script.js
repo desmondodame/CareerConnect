@@ -82,13 +82,16 @@ function openJobDetailsWindow(index) {
     </div>
     <div class="application-container">
         <h4>Application Form</h4>
-        <label for="name">Name:</label>
-        <input type="text" id="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <label for="files">Attach Files:</label>
-        <input type="file" id="files" multiple>
-        <button onclick="applyForJob(${index})">Apply</button>
+        <form id="application-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <label for="resume">Resume:</label>
+  <input type="file" id="resume" name="resume">
+  <button onclick="applyForJob(index)">Apply</button>
+</form>
+
     </div>
             <script src="script.js"></script>
         </body>
