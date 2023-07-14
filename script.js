@@ -116,9 +116,6 @@ function submitApplication(event, index) {
     console.log('Resume:', resume);
 }
 
-function applyForJob(index) {
-  // Perform actions when the "Apply" button is clicked
-  console.log('Applying for job index:', index);
 }
 
 // Read data when the page loads
