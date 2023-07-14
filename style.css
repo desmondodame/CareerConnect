@@ -1,176 +1,196 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.triangle-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 160px;
+  overflow: hidden;
 }
 
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 20px;
+.home-desktop-light,
+.rectangle {
+  position: absolute;
+  top: 42px;
+  left: 39px;
+  width: 946px;
+  height: 32px;
 }
 
-/* Header styles */
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
+.rectangle {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  height: 80px;
 }
 
-/* Job board container */
-#job-board {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+.filter-by-title-parent {
+  position: absolute;
+  top: 28px;
+  left: 24px;
+  width: 210px;
+  height: 24px;
+  overflow: hidden;
 }
 
-/* Job card styles */
-.job {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+.filter-by-location-parent {
+  position: absolute;
+  top: 28px;
+  left: 273px;
+  width: 186px;
+  height: 24px;
+  overflow: hidden;
 }
 
-.job:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.full-time-parent {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 378px;
 }
 
-.job h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.group {
+  position: absolute;
+  top: 28px;
+  left: 571px;
+  width: 144px;
+  height: 24px;
+  overflow: hidden;
 }
 
-.job p {
-    margin-bottom: 10px;
+.rectangle-copy-2,
+.rectangle-copy-3 {
+  position: absolute;
+  top: 0;
+  left: 222px;
+  background-color: var(--color-slategray);
+  width: 1px;
+  height: 80px;
+  opacity: 0.2;
+  mix-blend-mode: normal;
 }
 
-/* Job details container */
-#job-details {
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.rectangle-copy-3 {
+  left: 435px;
 }
 
-#job-details h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.search {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 176px;
 }
 
-#job-details p {
-    margin-bottom: 10px;
+.group-5-copy,
+.group-5-copy-2 {
+  position: absolute;
+  width: 80px;
+  height: 48px;
 }
 
-/* Filters container */
-#filters {
-    margin-bottom: 20px;
+.group-5-copy {
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
-#filters label {
-    margin-right: 10px;
-    font-weight: bold;
+.group-5-copy-2 {
+  top: 16px;
+  left: 841px;
+  text-align: center;
+  color: var(--color-white);
 }
 
-#filters input,
-#filters select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+.rectangle-parent {
+  position: absolute;
+  top: 120px;
+  left: 39px;
+  width: 946px;
+  height: 80px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
 }
 
-/* Apply button styles */
-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+.rectangle-group {
+  position: absolute;
+  top: 245px;
+  left: 39px;
+  width: 946px;
+  height: 253px;
+  font-size: var(--font-size-base);
+  color: var(--color-slategray);
 }
 
-button:hover {
-    background-color: #1c87c9;
+.vector-parent {
+  position: absolute;
+  top: 74px;
+  left: 32px;
+  width: 286px;
+  height: 147px;
+  overflow: hidden;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    #job-board {
-        grid-template-columns: 1fr;
-    }
+.rectangle-parent1 {
+  position: absolute;
+  top: 538px;
+  left: 39px;
+  width: 946px;
+  height: 253px;
+  font-size: var(--font-size-base);
+  color: var(--color-slategray);
 }
 
-
-
-/* Job details page */
-.job-details-body {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.rectangle-group-2 {
+  position: absolute;
+  top: 831px;
+  left: 39px;
+  width: 946px;
+  height: 253px;
+  overflow: hidden;
 }
 
-.job-details-body h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.rectangle-group-3 {
+  position: absolute;
+  top: 1124px;
+  left: 39px;
+  width: 946px;
+  height: 253px;
+  overflow: hidden;
 }
 
-.job-details-body .job-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.rectangle-group-4 {
+  position: absolute;
+  top: 1417px;
+  left: 39px;
+  width: 946px;
+  height: 253px;
+  overflow: hidden;
 }
 
-.job-details-body .job-info p {
-    margin-bottom: 10px;
+.rectangle-group-5 {
+  position: absolute;
+  top: 1710px;
+  left: 39px;
+  width: 946px;
+  height: 253px;
+  overflow: hidden;
 }
 
-.job-details-body .description-container {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+.group-5-copy-21,
+.group-5-copy1 {
+  position: absolute;
+  width: 141px;
+  height: 48px;
 }
 
-.job-details-body .application-container {
-    margin-top: 20px;
+.group-5-copy1 {
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
-.job-details-body .application-container h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.job-details-body .application-container label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.job-details-body .application-container input,
-.job-details-body .application-container button {
-    margin-bottom: 10px;
-}
-
-.job-details-body .application-container button {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.job-details-body .application-container button:hover {
-    background-color: #1c87c9;
-}
-
-.job-details-body .application-container .button-wrapper {
-    text-align: right;
+.group-5-copy-21 {
+  top: 2019px;
+  left: 441px;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
 }
