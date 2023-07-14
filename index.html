@@ -7,22 +7,28 @@
     <title>Amalitech Job Board</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js" defer></script>
+    <!-- Include the Font Awesome CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <h1>Amalitech Job Board</h1>
 
-    <div class="filters">
+    <div id="filters">
         <label for="title-filter">Title:</label>
         <input type="text" id="title-filter" oninput="filterJobs()">
+        <!-- Add search icon using Font Awesome -->
+        <i class="fas fa-search"></i>
     </div>
 
-    <div class="filters">
+    <div id="filters">
         <label for="location-filter">Location:</label>
         <input type="text" id="location-filter" oninput="filterJobs()">
+        <!-- Add search icon using Font Awesome -->
+        <i class="fas fa-search"></i>
     </div>
 
-    <div class="filters">
+    <div id="filters">
         <label for="type-filter">Employment Type:</label>
         <select id="type-filter" onchange="filterJobs()">
             <option value="">All</option>
@@ -34,6 +40,20 @@
     <div id="job-board"></div>
 
     <div id="job-details"></div>
+
+    <!-- Add a toggle for light and dark mode -->
+    <div id="mode-toggle">
+        <label for="toggle-checkbox">Toggle Mode:</label>
+        <input type="checkbox" id="toggle-checkbox" onclick="toggleMode()">
+        <span class="slider round"></span>
+    </div>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 
 </html>
