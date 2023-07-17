@@ -1,64 +1,176 @@
-/* Your CSS styles here */
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body styles */
 body {
-  margin: 0;
-  line-height: normal;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
 }
 
-:root {
-  /* fonts */
-  --font-kumbh-sans: "Kumbh Sans";
-
-  /* font sizes */
-  --font-size-base: 16px;
-  --font-size-xl: 20px;
-  --font-size-sm: 14px;
-
-  /* Colors */
-  --color-white: #fff;
-  --color-royalblue: #5964e0;
-  --color-slategray: #6e8098;
-  --color-gray-100: #19202d;
-  --color-gray-200: #132034;
-
-  /* border radiuses */
-  --br-8xs: 5px;
-  --br-7xs: 6px;
-  --br-mini: 15px;
-}
-
-/* Apply the styles to the elements */
-
+/* Header styles */
 h1 {
-  font-family: var(--font-kumbh-sans);
-  color: var(--color-royalblue);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.filters {
-  margin-bottom: 10px;
+/* Job board container */
+#job-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
 
-label {
-  font-family: var(--font-kumbh-sans);
-  font-size: var(--font-size-base);
-  color: var(--color-gray-100);
+/* Job card styles */
+.job {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-input[type="text"],
-select {
-  font-family: var(--font-kumbh-sans);
-  font-size: var(--font-size-base);
-  color: var(--color-gray-100);
-  border: 1px solid var(--color-gray-200);
-  border-radius: var(--br-7xs);
-  padding: 5px;
+.job:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#job-board,
+.job h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.job p {
+    margin-bottom: 10px;
+}
+
+/* Job details container */
 #job-details {
-  font-family: var(--font-kumbh-sans);
-  font-size: var(--font-size-base);
-  color: var(--color-slategray);
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Add the rest of your CSS styles to create the desired look */
+#job-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#job-details p {
+    margin-bottom: 10px;
+}
+
+/* Filters container */
+#filters {
+    margin-bottom: 20px;
+}
+
+#filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#filters input,
+#filters select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Apply button styles */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1c87c9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #job-board {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Job details page */
+.job-details-body {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-details-body h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.job-details-body .job-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-details-body .job-info p {
+    margin-bottom: 10px;
+}
+
+.job-details-body .description-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.job-details-body .application-container {
+    margin-top: 20px;
+}
+
+.job-details-body .application-container h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.job-details-body .application-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.job-details-body .application-container input,
+.job-details-body .application-container button {
+    margin-bottom: 10px;
+}
+
+.job-details-body .application-container button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.job-details-body .application-container button:hover {
+    background-color: #1c87c9;
+}
+
+.job-details-body .application-container .button-wrapper {
+    text-align: right;
+}
