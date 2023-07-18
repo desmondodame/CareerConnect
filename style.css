@@ -1,176 +1,219 @@
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
 }
 
 /* Header styles */
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
+.title-bar {
+  background-color: #5964e0;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px 0px 0 0;
+}
+
+.website-title {
+  margin: 0;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Search bar styles */
+.search-bar {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.search-bar input[type="text"],
+.search-bar label {
+  margin-right: 10px;
+}
+
+.search-bar button[type="submit"] {
+  background-color: #5964e0;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 /* Job board container */
 #job-board {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 /* Job card styles */
 .job {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .job:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .job h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .job p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Job details container */
 #job-details {
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #job-details h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 #job-details p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
-/* Filters container */
-#filters {
-    margin-bottom: 20px;
-}
-
-#filters label {
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-#filters input,
-#filters select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Apply button styles */
-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: #1c87c9;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    #job-board {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 
 /* Job details page */
 .job-details-body {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .job-details-body h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .job-details-body .job-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .job-details-body .job-info p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .job-details-body .description-container {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .job-details-body .application-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .job-details-body .application-container h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .job-details-body .application-container label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .job-details-body .application-container input,
 .job-details-body .application-container button {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .job-details-body .application-container button {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .job-details-body .application-container button:hover {
-    background-color: #1c87c9;
+  background-color: #1c87c9;
 }
 
 .job-details-body .application-container .button-wrapper {
-    text-align: right;
+  text-align: right;
+}
+
+/* Filters container */
+#filters {
+  margin-bottom: 20px;
+}
+
+#filters label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#filters input,
+#filters select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Apply button styles */
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1c87c9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #job-board {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  /* Add other dark mode styles */
 }
