@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CareerConnect</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" defer></script>
+  <title>CareerConnect</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script>
+  <style>
+    /* CSS styles here */
+  </style>
 </head>
-
 <body>
-<h1> CareerConnect</h1>
+  <header class="title-bar">
+    <h1 class="website-title">CareerConnect</h1>
+    <div class="toggle">
+      <input type="checkbox" id="dark-mode-toggle">
+      <label for="dark-mode-toggle">Dark Mode</label>
+    </div>
+  </header>
+  
+  <div class="search-bar">
+    <input type="text" id="title-search" placeholder="Search by Title" oninput="searchJobs()">
+    <input type="text" id="location-search" placeholder="Search by Location" oninput="searchJobs()">
+    <label>
+      <input type="checkbox" id="full-checkbox" onchange="searchJobs()">
+      Full Only
+    </label>
+  </div>
 
-<div id="filters">
-    <label for="title-filter">Title:</label>
-    <input type="text" id="title-filter" oninput="filterJobs()">
-</div>
+  <div id="job-board"></div>
 
-<div id="filters">
-    <label for="location-filter">Location:</label>
-    <input type="text" id="location-filter" oninput="filterJobs()">
-</div>
+  <div id="job-details"></div>
 
-<div id="filters">
-    <label for="type-filter">Employment Type:</label>
-    <select id="type-filter" onchange="filterJobs()">
-        <option value="">All</option>
-        <option value="Full-time">Full-time</option>
-        <option value="Part-time">Part-time</option>
-    </select>
-</div>
-
-<div id="job-board"></div>
-
-<div id="job-details"></div>
+  <script>
+    // JavaScript code here
+  </script>
 </body>
-
 </html>
