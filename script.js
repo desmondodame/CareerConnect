@@ -1,29 +1,28 @@
-// Global variables to store the job data and filter options
+// Global variables
 let jobData = [];
-let titleFilter = '';
-let locationFilter = '';
-let typeFilter = '';
+let filteredJobs = [];
 
-// Function to fetch data from JSON file
+// Fetch job data from JSON file
 async function fetchJobData() {
   try {
     const response = await fetch('data.json');
     const data = await response.json();
     jobData = data.jobs;
-    displayJobs(jobData);
+    filteredJobs = jobData;
+    displayJobs(filteredJobs);
   } catch (error) {
     console.log('Error fetching job data:', error);
   }
 }
 
-// Function to create an element with given tag name and text content
+// Create an element with given tag name and text content
 function createElement(tagName, textContent) {
   const element = document.createElement(tagName);
   element.textContent = textContent;
   return element;
 }
 
-// Function to display job listings
+// Display job listings
 function displayJobs(jobs) {
   const jobBoard = document.getElementById('job-board');
   jobBoard.innerHTML = ''; // Clear previous job listings
@@ -46,26 +45,26 @@ function displayJobs(jobs) {
   });
 }
 
-// Function to filter jobs based on user selections
+// Filter jobs based on user selections
 function filterJobs() {
-  titleFilter = document.getElementById('title-search').value.toLowerCase();
-  locationFilter = document.getElementById('location-search').value;
-  typeFilter = document.querySelector('input[name="employment-type"]:checked').value;
+  const titleFilter = document.getElementById('title-search').value.toLowerCase();
+  const locationFilter = document.getElementById('location-search').value.toLowerCase();
+  const fullCheckbox = document.getElementById('full-checkbox');
 
-  const filteredJobs = jobData.filter(job => {
+  filteredJobs = jobData.filter((job) => {
     const titleMatch = job.title.toLowerCase().includes(titleFilter);
-    const locationMatch = locationFilter === '' || job.location === locationFilter;
-    const typeMatch = typeFilter === '' || job.employmentType === typeFilter;
+    const locationMatch = job.location.toLowerCase().includes(locationFilter);
+    const fullMatch = !fullCheckbox.checked || job.employmentType.toLowerCase() === 'full-time';
 
-    return titleMatch && locationMatch && typeMatch;
+    return titleMatch && locationMatch && fullMatch;
   });
 
   displayJobs(filteredJobs);
 }
 
-// Function to open a new tab with job details
+// Open a new tab with job details
 function openJobDetailsWindow(index) {
-  const job = jobData[index];
+  const job = filteredJobs[index];
 
   const jobDetailsHTML = `
     <html>
@@ -75,28 +74,44 @@ function openJobDetailsWindow(index) {
     </head>
     <body>
         <div class="job-details-body">
-            <h3>${job.title}</h3>
-            <div class="job-info">
-                <p>Location: ${job.location}</p>
-                <p>Employment Type: ${job.employmentType}</p>
-            </div>
-            <div class="description-container">
-                <p>Description: ${job.description}</p>
-            </div>
-            <div class="application-container">
-                <h4>Application Form</h4>
-                <form id="application-form" onsubmit="submitApplication(event, ${index})">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                    <label for="resume">Resume:</label>
-                    <input type="file" id="resume" required>
-                    <button type="submit">Apply</button>
-                </form>
-            </div>
+          <h3>${job.title}</h3>
+          <div class="job-info">
+              <p>Location: ${job.location}</p>
+              <p>Employment Type: ${job.employmentType}</p>
+          </div>
+          <div class="description-container">
+              <p>Description: ${job.description}</p>
+          </div>
+          <div class="application-container">
+              <h4>Application Form</h4>
+              <form id="application-form" onsubmit="submitApplication(event, ${index})">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="resume">Attach Resume:</label>
+                <input type="file" id="resume" required>
+                <button type="submit">Apply</button>
+              </form>
+          </div>
         </div>
-        <script src="script.js" defer></script>
+        <script src="script.js"></script>
+        <script>
+          // Function to submit job application
+          function submitApplication(event, index) {
+            event.preventDefault();
+
+            const form = document.getElementById('application-form');
+            const name = form.name.value;
+            const email = form.email.value;
+            const resume = form.resume.files[0];
+
+            console.log('Application submitted for job index', index);
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Resume:', resume);
+          }
+        </script>
     </body>
     </html>
   `;
@@ -107,28 +122,24 @@ function openJobDetailsWindow(index) {
   jobDetailsWindow.document.close();
 }
 
-// Function to submit job application
-function submitApplication(event, index) {
-  event.preventDefault();
-
-  const form = document.getElementById('application-form');
-  const name = form.name.value;
-  const email = form.email.value;
-  const resume = form.resume.files[0];
-
-  console.log('Application submitted for job index', index);
-  console.log('Name:', name);
-  console.log('Email:', email);
-  console.log('Resume:', resume);
+// Toggle dark mode
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
 }
 
-// Read data when the page loads
-window.addEventListener('DOMContentLoaded', () => {
-  fetchJobData();
+// Event listener for the dark mode toggle checkbox
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+darkModeToggle.addEventListener('change', toggleDarkMode);
 
-  // Dark Mode Toggle
-  const darkModeToggle = document.getElementById('dark-mode-toggle');
-  darkModeToggle.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode', darkModeToggle.checked);
-  });
-});
+// Event listeners for search inputs and checkbox
+const titleSearchInput = document.getElementById('title-search');
+const locationSearchInput = document.getElementById('location-search');
+const fullCheckbox = document.getElementById('full-checkbox');
+
+titleSearchInput.addEventListener('input', filterJobs);
+locationSearchInput.addEventListener('input', filterJobs);
+fullCheckbox.addEventListener('change', filterJobs);
+
+// Read data when the page loads
+window.addEventListener('DOMContentLoaded', fetchJobData);
