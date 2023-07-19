@@ -1,5 +1,6 @@
 let jobData = [];
 let lastSelectedCheckbox;  // Global variable to store the last selected checkbox
+let filteredJobs = []; // Declare filteredJobs globally
 
 
 
