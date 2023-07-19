@@ -63,65 +63,57 @@ function filterJobs() {
 
   displayJobs(filteredJobs);
 }
-
 // Open a new tab with job details
 function openJobDetailsWindow(index) {
   const job = filteredJobs[index];
 
-  const jobDetailsHTML = `
-    <html>
-    <head>
-        <title>Job Details</title>  
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="job-details-body">
-          <h3>${job.title}</h3>
-          <div class="job-info">
-              <p>Location: ${job.location}</p>
-              <p>Employment Type: ${job.employmentType}</p>
-          </div>
-          <div class="description-container">
-              <p>Description: ${job.description}</p>
-          </div>
-          <div class="application-container">
-              <h4>Application Form</h4>
-              <form id="application-form" onsubmit="submitApplication(event, ${index})">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="resume">Attach Resume:</label>
-                <input type="file" id="resume" required>
-                <button type="submit">Apply</button>
-              </form>
-          </div>
-        </div>
-        <script src="script.js"></script>
-        <script>
-          // Function to submit job application
-          function submitApplication(event, index) {
-            event.preventDefault();
+  const jobDetailsWindow = window.open('job_details.html', '_blank');
 
-            const form = document.getElementById('application-form');
-            const name = form.name.value;
-            const email = form.email.value;
-            const resume = form.resume.files[0];
+  jobDetailsWindow.addEventListener('DOMContentLoaded', () => {
+    const jobTitle = jobDetailsWindow.document.getElementById('job-title');
+    const jobLocation = jobDetailsWindow.document.getElementById('job-location');
+    const jobEmploymentType = jobDetailsWindow.document.getElementById('job-employment-type');
+    const jobDescription = jobDetailsWindow.document.getElementById('job-description');
+    const jobResponsibilities = jobDetailsWindow.document.getElementById('job-responsibilities'); // New element for responsibilities
 
-            console.log('Application submitted for job index', index);
-            console.log('Name:', name);
-            console.log('Email:', email);
-            console.log('Resume:', resume);
-          }
-        </script>
-    </body>
-    </html>
-  `;
+    jobTitle.textContent = job.title;
+    jobLocation.textContent = 'Location: ' + job.location;
+    jobEmploymentType.textContent = 'Employment Type: ' + job.employmentType;
+    jobDescription.textContent = job.description;
 
-  const jobDetailsWindow = window.open('', '_blank');
-  jobDetailsWindow.document.open();
-  jobDetailsWindow.document.write(jobDetailsHTML);
-  jobDetailsWindow.document.close();
+    // Populate responsibilities in the View Details page
+    const responsibilitiesList = document.createElement('ul');
+    job.responsibilities.forEach((responsibility) => {
+      const li = document.createElement('li');
+      li.textContent = responsibility;
+      responsibilitiesList.appendChild(li);
+    });
+    jobResponsibilities.appendChild(responsibilitiesList);
+
+    const applicationForm = jobDetailsWindow.document.getElementById('application-form');
+    applicationForm.addEventListener('submit', (event) => submitApplication(event, index));
+  });
+}
+
+// ... (Keep the rest of the original code)
+
+
+
+// Function to submit job application
+function submitApplication(event, index) {
+  event.preventDefault();
+
+  const form = document.getElementById('application-form');
+  const name = form.name.value;
+  const email = form.email.value;
+  const resume = form.resume.files[0];
+  const message = form.message.value;
+
+  console.log('Application submitted for job index', index);
+  console.log('Name:', name);
+  console.log('Email:', email);
+  console.log('Resume:', resume);
+  console.log('Cover Letter:', message);
 }
 
 // Toggle dark mode

@@ -4,97 +4,207 @@
       "title": "Software Engineer",
       "location": "Accra",
       "employmentType": "Full-time",
-      "description": "We are seeking a skilled Software Engineer to join our development team. The ideal candidate will have experience in developing web applications using JavaScript, HTML, and CSS. Responsibilities include collaborating with the team to design and implement new features, debugging and resolving technical issues, and ensuring code quality through testing and code reviews."
+      "description": "We are seeking a skilled Software Engineer to join our development team. The ideal candidate will have experience in developing web applications using JavaScript, HTML, and CSS. Responsibilities include collaborating with the team to design and implement new features, debugging and resolving technical issues, and ensuring code quality through testing and code reviews.",
+      "responsibilities": [
+        "Design and develop software applications",
+        "Collaborate with the team to design and implement new features",
+        "Debug and resolve technical issues",
+        "Ensure code quality through testing and code reviews"
+      ]
     },
     {
       "title": "Data Analyst",
       "location": "Tamale",
       "employmentType": "Part-time",
-      "description": "We are seeking a Data Analyst to collect, analyze, and interpret data to support business decision-making. The candidate should be proficient in SQL, Excel, and data visualization tools. Responsibilities include extracting data from databases, performing statistical analysis, creating reports and dashboards, and presenting findings to stakeholders."
+      "description": "We are seeking a Data Analyst to collect, analyze, and interpret data to support business decision-making. The candidate should be proficient in SQL, Excel, and data visualization tools. Responsibilities include extracting data from databases, performing statistical analysis, creating reports and dashboards, and presenting findings to stakeholders.",
+      "responsibilities": [
+        "Collect, analyze, and interpret data",
+        "Extract data from databases",
+        "Perform statistical analysis",
+        "Create reports and dashboards",
+        "Present findings to stakeholders"
+      ]
     },
     {
       "title": "Web Developer",
       "location": "Techiman",
       "employmentType": "Part-time",
-      "description": "We are seeking a skilled Web Developer to build and maintain responsive websites. The candidate should have experience in front-end and back-end web development using HTML, CSS, JavaScript, and web frameworks. Responsibilities include collaborating with designers to implement website designs, optimizing web applications for maximum speed and scalability, and troubleshooting and debugging issues."
+      "description": "We are seeking a skilled Web Developer to build and maintain responsive websites. The candidate should have experience in front-end and back-end web development using HTML, CSS, JavaScript, and web frameworks. Responsibilities include collaborating with designers to implement website designs, optimizing web applications for maximum speed and scalability, and troubleshooting and debugging issues.",
+      "responsibilities": [
+        "Build and maintain responsive websites",
+        "Implement website designs in collaboration with designers",
+        "Optimize web applications for speed and scalability",
+        "Troubleshoot and debug issues in web applications"
+      ]
     },
     {
       "title": "Business Analyst",
       "location": "Navrongo",
       "employmentType": "Part-time", 
-      "description": "We are seeking a Business Analyst to analyze business processes and identify opportunities for improvement. The candidate should have strong analytical and problem-solving skills. Responsibilities include gathering and documenting business requirements, conducting feasibility studies, analyzing data, identifying areas of improvement, and proposing solutions to enhance business efficiency."
+      "description": "We are seeking a Business Analyst to analyze business processes and identify opportunities for improvement. The candidate should have strong analytical and problem-solving skills. Responsibilities include gathering and documenting business requirements, conducting feasibility studies, analyzing data, identifying areas of improvement, and proposing solutions to enhance business efficiency.",
+      "responsibilities": [
+        "Analyze business processes and identify improvement opportunities",
+        "Gather and document business requirements",
+        "Conduct feasibility studies",
+        "Analyze data and provide insights",
+        "Propose solutions to enhance business efficiency"
+      ]
     },
     {
       "title": "Network Administrator",
       "location": "Kumasi",
       "employmentType": "Part-time",
-      "description": "We are looking for a Network Administrator to manage and maintain our computer networks. The candidate should have expertise in network administration, protocols, and security measures. Responsibilities include setting up and monitoring network infrastructure, troubleshooting network issues, and ensuring network performance and security."
+      "description": "We are looking for a Network Administrator to manage and maintain our computer networks. The candidate should have expertise in network administration, protocols, and security measures. Responsibilities include setting up and monitoring network infrastructure, troubleshooting network issues, and ensuring network performance and security.",
+      "responsibilities": [
+        "Manage and maintain computer networks",
+        "Set up and monitor network infrastructure",
+        "Troubleshoot network issues",
+        "Ensure network performance and security"
+      ]
     },
     {
       "title": "Cybersecurity Analyst",
       "location": "Accra",
       "employmentType": "Full-time",
-      "description": "We are hiring a Cybersecurity Analyst to protect our systems and networks from security breaches. The candidate should have a strong understanding of cybersecurity principles and technologies. Responsibilities include conducting vulnerability assessments, implementing security measures, monitoring for security incidents, and responding to security breaches."
+      "description": "We are hiring a Cybersecurity Analyst to protect our systems and networks from security breaches. The candidate should have a strong understanding of cybersecurity principles and technologies. Responsibilities include conducting vulnerability assessments, implementing security measures, monitoring for security incidents, and responding to security breaches.",
+      "responsibilities": [
+        "Protect systems and networks from security breaches",
+        "Conduct vulnerability assessments",
+        "Implement security measures",
+        "Monitor for security incidents",
+        "Respond to security breaches"
+      ]
     },
     {
       "title": "Database Administrator",
       "location": "Takoradi",
       "employmentType": "Part-time",
-      "description": "We are seeking a skilled Database Administrator to manage and maintain our databases. The candidate should have expertise in database management systems and SQL. Responsibilities include designing and implementing databases, ensuring data integrity and security, optimizing database performance, and troubleshooting database issues."
+      "description": "We are seeking a skilled Database Administrator to manage and maintain our databases. The candidate should have expertise in database management systems and SQL. Responsibilities include designing and implementing databases, ensuring data integrity and security, optimizing database performance, and troubleshooting database issues.",
+      "responsibilities": [
+        "Manage and maintain databases",
+        "Design and implement databases",
+        "Ensure data integrity and security",
+        "Optimize database performance",
+        "Troubleshoot database issues"
+      ]
     },
     {
       "title": "IT Project Manager",
       "location": "Cape Coast",
       "employmentType": "Full-time",
-      "description": "We are hiring an IT Project Manager to oversee and manage IT projects from initiation to completion. The candidate should have strong project management skills and knowledge of IT systems and technologies. Responsibilities include defining project scope, developing project plans, coordinating resources, managing budgets, and ensuring project delivery within time and budget constraints."
+      "description": "We are hiring an IT Project Manager to oversee and manage IT projects from initiation to completion. The candidate should have strong project management skills and knowledge of IT systems and technologies. Responsibilities include defining project scope, developing project plans, coordinating resources, managing budgets, and ensuring project delivery within time and budget constraints.",
+      "responsibilities": [
+        "Oversee and manage IT projects",
+        "Define project scope and objectives",
+        "Develop project plans",
+        "Coordinate resources and tasks",
+        "Manage project budgets",
+        "Ensure project delivery within time and budget constraints"
+      ]
     },
     {
       "title": "Cloud Architect",
       "location": "Koforidua",
       "employmentType": "Part-time",
-      "description": "We are seeking a Cloud Solutions Architect to design and implement cloud-based solutions for our organization. The candidate should have expertise in cloud platforms, architecture, and services. Responsibilities include assessing business requirements, designing scalable and secure cloud solutions, implementing cloud infrastructure, and providing guidance on cloud best practices."
+      "description": "We are seeking a Cloud Solutions Architect to design and implement cloud-based solutions for our organization. The candidate should have expertise in cloud platforms, architecture, and services. Responsibilities include assessing business requirements, designing scalable and secure cloud solutions, implementing cloud infrastructure, and providing guidance on cloud best practices.",
+      "responsibilities": [
+        "Design and implement cloud-based solutions",
+        "Assess business requirements",
+        "Design scalable and secure cloud solutions",
+        "Implement cloud infrastructure",
+        "Provide guidance on cloud best practices"
+      ]
     },
     {
       "title": "IT Support Specialist",
       "location": "Wa",
       "employmentType": "Part-time",
-      "description": "We are looking for an IT Support Specialist to provide technical assistance and support to our users. The candidate should have strong troubleshooting skills and knowledge of IT systems and applications. Responsibilities include responding to user inquiries, diagnosing and resolving hardware and software issues, installing and configuring software and hardware, and maintaining IT documentation."
+      "description": "We are looking for an IT Support Specialist to provide technical assistance and support to our users. The candidate should have strong troubleshooting skills and knowledge of IT systems and applications. Responsibilities include responding to user inquiries, diagnosing and resolving hardware and software issues, installing and configuring software and hardware, and maintaining IT documentation.",
+      "responsibilities": [
+        "Provide technical assistance and support to users",
+        "Respond to user inquiries and issues",
+        "Diagnose and resolve hardware and software issues",
+        "Install and configure software and hardware",
+        "Maintain IT documentation"
+      ]
     },
     {
       "title": "UI/UX Designer",
       "location": "Bolgatanga",
       "employmentType": "Full-time",
-      "description": "We are hiring a talented UI/UX Designer to create intuitive and visually appealing user interfaces for our applications. The candidate should have expertise in user-centered design principles and UI/UX design tools. Responsibilities include conducting user research, creating wireframes and prototypes, designing user interfaces, and collaborating with development teams to implement UI/UX designs."
+      "description": "We are hiring a talented UI/UX Designer to create intuitive and visually appealing user interfaces for our applications. The candidate should have expertise in user-centered design principles and UI/UX design tools. Responsibilities include conducting user research, creating wireframes and prototypes, designing user interfaces, and collaborating with development teams to implement UI/UX designs.",
+      "responsibilities": [
+        "Create intuitive and visually appealing user interfaces",
+        "Conduct user research and gather insights",
+        "Create wireframes and prototypes",
+        "Design user interfaces",
+        "Collaborate with development teams to implement UI/UX designs"
+      ]
     },
     {
       "title": "IT Consultant",
       "location": "Sekondi-Takoradi",
       "employmentType": "Part-time",
-      "description": "We are seeking an experienced IT Consultant to provide expert advice and guidance to our clients. The candidate should have a deep understanding of IT systems, technologies, and best practices. Responsibilities include assessing client needs, recommending IT solutions, implementing technology strategies, and providing ongoing technical support and guidance."
+      "description": "We are seeking an experienced IT Consultant to provide expert advice and guidance to our clients. The candidate should have a deep understanding of IT systems, technologies, and best practices. Responsibilities include assessing client needs, recommending IT solutions, implementing technology strategies, and providing ongoing technical support and guidance.",
+      "responsibilities": [
+        "Provide expert advice and guidance to clients",
+        "Assess client IT needs and requirements",
+        "Recommend and implement IT solutions",
+        "Develop technology strategies",
+        "Provide ongoing technical support and guidance"
+      ]
     },
     {
       "title": "IT Auditor",
       "location": "Sunyani",
       "employmentType": "Full-time",
-      "description": "We are hiring an IT Auditor to evaluate and assess the effectiveness of our IT controls and security measures. The candidate should have knowledge of IT auditing standards and frameworks. Responsibilities include conducting IT risk assessments, performing audits of IT systems and processes, identifying control weaknesses, and providing recommendations for improvement."
+      "description": "We are hiring an IT Auditor to evaluate and assess the effectiveness of our IT controls and security measures. The candidate should have knowledge of IT auditing standards and frameworks. Responsibilities include conducting IT risk assessments, performing audits of IT systems and processes, identifying control weaknesses, and providing recommendations for improvement.",
+      "responsibilities": [
+        "Evaluate and assess IT controls and security measures",
+        "Conduct IT risk assessments",
+        "Perform audits of IT systems and processes",
+        "Identify control weaknesses",
+        "Provide recommendations for improvement"
+      ]
     },
     {
       "title": "Systems Administrator",
       "location": "Ho",
       "employmentType": "Full-time",
-      "description": "We are looking for a Systems Administrator to manage and maintain our computer systems and servers. The candidate should have expertise in system administration, including operating systems and server management. Responsibilities include installing and configuring systems, monitoring system performance, troubleshooting system issues, and ensuring system security and backups."
+      "description": "We are looking for a Systems Administrator to manage and maintain our computer systems and servers. The candidate should have expertise in system administration, including operating systems and server management. Responsibilities include installing and configuring systems, monitoring system performance, troubleshooting system issues, and ensuring system security and backups.",
+      "responsibilities": [
+        "Manage and maintain computer systems and servers",
+        "Install and configure systems",
+        "Monitor system performance",
+        "Troubleshoot system issues",
+        "Ensure system security and backups"
+      ]
     },
     {
       "title": "IT Trainer",
       "location": "Kumasi",
       "employmentType": "Part-time",
-      "description": "We are seeking an IT Trainer to provide training and support to our users on IT systems and applications. The candidate should have strong communication and teaching skills, as well as knowledge of IT technologies and software. Responsibilities include developing training materials, conducting training sessions, providing user support and guidance, and evaluating training effectiveness."
+      "description": "We are seeking an IT Trainer to provide training and support to our users on IT systems and applications. The candidate should have strong communication and teaching skills, as well as knowledge of IT technologies and software. Responsibilities include developing training materials, conducting training sessions, providing user support and guidance, and evaluating training effectiveness.",
+      "responsibilities": [
+        "Provide training and support to users on IT systems and applications",
+        "Develop training materials and resources",
+        "Conduct training sessions",
+        "Provide user support and guidance",
+        "Evaluate training effectiveness"
+      ]
     },
     {
       "title": "IT Procurement Specialist",
       "location": "Tema",
       "employmentType": "Full-time",
-      "description": "We are hiring an IT Procurement Specialist to manage and coordinate the procurement of IT hardware, software, and services. The candidate should have knowledge of IT products and vendors, as well as procurement processes. Responsibilities include identifying IT procurement needs, researching and evaluating vendors, negotiating contracts, and ensuring timely and cost-effective procurement."
+      "description": "We are hiring an IT Procurement Specialist to manage and coordinate the procurement of IT hardware, software, and services. The candidate should have knowledge of IT products and vendors, as well as procurement processes. Responsibilities include identifying IT procurement needs, researching and evaluating vendors, negotiating contracts, and ensuring timely and cost-effective procurement.",
+      "responsibilities": [
+        "Manage and coordinate IT hardware, software, and services procurement",
+        "Identify IT procurement needs",
+        "Research and evaluate vendors",
+        "Negotiate contracts",
+        "Ensure timely and cost-effective procurement"
+      ]
     }
   ]
 }
