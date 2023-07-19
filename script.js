@@ -50,13 +50,15 @@ function filterJobs() {
   const titleFilter = document.getElementById('title-search').value.toLowerCase();
   const locationFilter = document.getElementById('location-search').value.toLowerCase();
   const fullCheckbox = document.getElementById('full-checkbox');
+  const partCheckbox = document.getElementById('part-checkbox');
 
   filteredJobs = jobData.filter((job) => {
     const titleMatch = job.title.toLowerCase().includes(titleFilter);
     const locationMatch = job.location.toLowerCase().includes(locationFilter);
     const fullMatch = !fullCheckbox.checked || job.employmentType.toLowerCase() === 'full-time';
+    const partMatch = !partCheckbox.checked || job.employmentType.toLowerCase() === 'part-time';
 
-    return titleMatch && locationMatch && fullMatch;
+    return titleMatch && locationMatch && fullMatch && partMatch;
   });
 
   displayJobs(filteredJobs);
@@ -132,14 +134,16 @@ function toggleDarkMode() {
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 darkModeToggle.addEventListener('change', toggleDarkMode);
 
-// Event listeners for search inputs and checkbox
+// Event listeners for search inputs and checkboxes
 const titleSearchInput = document.getElementById('title-search');
 const locationSearchInput = document.getElementById('location-search');
 const fullCheckbox = document.getElementById('full-checkbox');
+const partCheckbox = document.getElementById('part-checkbox');
 
 titleSearchInput.addEventListener('input', filterJobs);
 locationSearchInput.addEventListener('input', filterJobs);
 fullCheckbox.addEventListener('change', filterJobs);
+partCheckbox.addEventListener('change', filterJobs);
 
 // Read data when the page loads
 window.addEventListener('DOMContentLoaded', fetchJobData);
