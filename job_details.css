@@ -1,0 +1,120 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Job details body */
+  .job-details-body {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .job-details-body h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Job info */
+  .job-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #666;
+  }
+  
+  .job-info p {
+    margin-bottom: 10px;
+  }
+  
+  /* Description container */
+  .description-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .description-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .description-container p {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Responsibilities container */
+  .responsibilities-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .responsibilities-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .responsibilities-container ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .responsibilities-container li {
+    margin-bottom: 5px;
+  }
+  
+  /* Application form */
+  .application-container {
+    margin-top: 20px;
+  }
+  
+  .application-container h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .application-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .application-container input,
+  .application-container textarea,
+  .application-container button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .application-container textarea {
+    resize: vertical;
+  }
+  
+  .application-container button {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .application-container button:hover {
+    background-color: #1c87c9;
+  }
+  
