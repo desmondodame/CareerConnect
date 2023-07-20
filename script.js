@@ -32,6 +32,7 @@ function displayJobs(jobs) {
     jobElement.classList.add('job');
 
     jobElement.appendChild(createElement('h3', job.title));
+    jobElement.appendChild(createElement('p', 'Company: ' + job.company)); // Add company name
     jobElement.appendChild(createElement('p', 'Location: ' + job.location));
     jobElement.appendChild(createElement('p', 'Employment Type: ' + job.employmentType));
 
@@ -44,7 +45,6 @@ function displayJobs(jobs) {
     jobBoard.appendChild(jobElement);
   });
 }
-
 // Filter jobs based on user selections
 function filterJobs() {
   const titleFilter = document.getElementById('title-search').value.toLowerCase();
@@ -95,7 +95,7 @@ function openJobDetailsWindow(index) {
   });
 }
 
-// ... (Keep the rest of the original code)
+
 
 
 

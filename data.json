@@ -1,6 +1,7 @@
 {
   "jobs": [
     {
+      "company": "TechCorp",
       "title": "Software Engineer",
       "location": "Accra",
       "employmentType": "Full-time",
@@ -13,6 +14,7 @@
       ]
     },
     {
+      "company": "DataTech",
       "title": "Data Analyst",
       "location": "Tamale",
       "employmentType": "Part-time",
@@ -26,6 +28,7 @@
       ]
     },
     {
+      "company": "WebTech Solutions",
       "title": "Web Developer",
       "location": "Techiman",
       "employmentType": "Part-time",
@@ -38,9 +41,10 @@
       ]
     },
     {
+      "company": "BizTech Solutions",
       "title": "Business Analyst",
       "location": "Navrongo",
-      "employmentType": "Part-time", 
+      "employmentType": "Part-time",
       "description": "We are seeking a Business Analyst to analyze business processes and identify opportunities for improvement. The candidate should have strong analytical and problem-solving skills. Responsibilities include gathering and documenting business requirements, conducting feasibility studies, analyzing data, identifying areas of improvement, and proposing solutions to enhance business efficiency.",
       "responsibilities": [
         "Analyze business processes and identify improvement opportunities",
@@ -51,6 +55,7 @@
       ]
     },
     {
+      "company": "Network Solutions Ltd.",
       "title": "Network Administrator",
       "location": "Kumasi",
       "employmentType": "Part-time",
@@ -63,6 +68,7 @@
       ]
     },
     {
+      "company": "SecureTech Solutions",
       "title": "Cybersecurity Analyst",
       "location": "Accra",
       "employmentType": "Full-time",
@@ -76,6 +82,7 @@
       ]
     },
     {
+      "company": "DataMaster Solutions",
       "title": "Database Administrator",
       "location": "Takoradi",
       "employmentType": "Part-time",
@@ -89,6 +96,7 @@
       ]
     },
     {
+      "company": "IT Solutions Ltd.",
       "title": "IT Project Manager",
       "location": "Cape Coast",
       "employmentType": "Full-time",
@@ -103,6 +111,7 @@
       ]
     },
     {
+      "company": "CloudTech Solutions",
       "title": "Cloud Architect",
       "location": "Koforidua",
       "employmentType": "Part-time",
@@ -116,6 +125,7 @@
       ]
     },
     {
+      "company": "TechSupport Services",
       "title": "IT Support Specialist",
       "location": "Wa",
       "employmentType": "Part-time",
@@ -129,6 +139,7 @@
       ]
     },
     {
+      "company": "DesignTech Solutions",
       "title": "UI/UX Designer",
       "location": "Bolgatanga",
       "employmentType": "Full-time",
@@ -142,6 +153,7 @@
       ]
     },
     {
+      "company": "IT Solutions Consulting",
       "title": "IT Consultant",
       "location": "Sekondi-Takoradi",
       "employmentType": "Part-time",
@@ -155,6 +167,7 @@
       ]
     },
     {
+      "company": "TechAudit Services",
       "title": "IT Auditor",
       "location": "Sunyani",
       "employmentType": "Full-time",
@@ -168,6 +181,7 @@
       ]
     },
     {
+      "company": "SystemTech Solutions",
       "title": "Systems Administrator",
       "location": "Ho",
       "employmentType": "Full-time",
@@ -181,6 +195,7 @@
       ]
     },
     {
+      "company": "TechTraining Academy",
       "title": "IT Trainer",
       "location": "Kumasi",
       "employmentType": "Part-time",
@@ -194,6 +209,7 @@
       ]
     },
     {
+      "company": "TechProcure Solutions",
       "title": "IT Procurement Specialist",
       "location": "Tema",
       "employmentType": "Full-time",

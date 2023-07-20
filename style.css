@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -252,17 +251,89 @@ button:hover {
   background-color: #5964e0;
 }
 
+/* search bar styles for dark mode */
 .dark-mode .search-bar {
   background-color: #333333;
 }
 
 .dark-mode .search-bar input[type="text"],
 .dark-mode .search-bar label {
-  color: #fff;
+  color: #fff; 
 }
 
 .dark-mode .search-bar button[type="submit"] {
   background-color: #5964e0;
+  color: #ffffff;
+}
+
+/* Job board container */
+.dark-mode #job-board {
+  background-color: #333333;
+}
+
+/* Job card styles */
+.dark-mode .job {
+  background-color: #444444;
+  color: #fff; 
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .job:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .job h3 {
+  color: #fff; 
+}
+
+/* Job details page */
+.dark-mode .job-details-body {
+  background-color: #333333;
+  color: #fff;
+}
+
+.dark-mode .job-details-body .job-info p {
+  color: #fff;
+}
+
+.dark-mode .job-details-body .description-container {
+  border-color: #777777;
+}
+
+.dark-mode .job-details-body .application-container button {
+  background-color: #5964e0;
+}
+
+.dark-mode .job-details-body .application-container button:hover {
+  background-color: #1c87c9;
+}
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.dark-mode body {
+  background-color: #222222;
+  color: #fff;
+}
+
+.dark-mode .title-bar {
+  background-color: #5964e0;
+}
+
+.dark-mode .search-bar {
+  background-color: #333333;
+}
+
+.dark-mode .search-bar input[type="text"],
+.dark-mode .search-bar label {
+  color: #ffffff;
+}
+
+.dark-mode .search-bar button[type="submit"] {
+  background-color: #5964e0;
+  color: #ffffff;
 }
 
 .dark-mode #job-board {
